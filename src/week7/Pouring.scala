@@ -32,8 +32,8 @@ class Pouring(capacity: Vector[Int]) {
 
   // Paths - Last moves comes first
   class Path(history: List[Move]) {
-    def endState: Vector[Int] = (history foldRight initialState) (_ change _)
     /*
+    def endState: Vector[Int] = (history foldRight initialState) (_ change _)
     def endState: State = trackState(history)
     private def trackState(xs: List[Move]): State = xs match {
       case Nil => initialState
