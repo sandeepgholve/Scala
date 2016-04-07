@@ -26,8 +26,7 @@ object MyModule {
       else go(count-1, second, first+second)
     }
 
-    if (num == 0) 0
-    else go(num-1, 0, 1)
+    go(num, 0, 1)
   }
 
   private def formatAbs(x: Int) = {

@@ -8,6 +8,6 @@ object Test {
     println(MyModule.fibonacci(8))
     val num = 5
     val msg = "Factorial of %d is %d"
-    msg.format(num, MyModule.factorial(num))
+    println(msg.format(num, MyModule.factorial(num)))
   }
 }
